@@ -1,2 +1,0 @@
-import{r as t,h as e}from"./p-36df07cd.js";const r=":host{display:block;--color:var(--color-primary);--text-line-height:26px}:host true-text-base{--line-height:var(--text-line-height);--text-color:var(--color)}";const s=class{constructor(e){t(this,e);this.weight="regular";this.color=undefined;this.maxLines=undefined}render(){return e("true-text-base",{size:"m",weight:this.weight,maxLines:this.maxLines,color:this.color},e("slot",null))}};s.style=r;export{s as true_text};
-//# sourceMappingURL=p-0f25230b.entry.js.map

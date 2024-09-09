@@ -1,9 +1,0 @@
-:host {
-  display: block;
-  --color: var(--color-tertiary);
-}
-:host true-text-base {
-  --text-color: var(--color);
-  --text-transform: uppercase !important;
-  --letter-spacing: 1px;
-}

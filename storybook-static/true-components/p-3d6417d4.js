@@ -1,2 +1,0 @@
-function t(t,n){if(t===true){const t=n.closest("form");if(t){t.dispatchEvent(new CustomEvent("submit",{cancelable:true}))}}}function n(t){try{t.target.closest("button").blur()}catch(t){}}export{n as r,t};
-//# sourceMappingURL=p-3d6417d4.js.map

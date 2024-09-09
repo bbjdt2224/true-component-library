@@ -1,1 +1,0 @@
-{"version":3,"file":"text-button.interface.js","sourceRoot":"","sources":["../../../../src/components/buttons/text-button/text-button.interface.ts"],"names":[],"mappings":"","sourcesContent":["import { TextSize } from '../../typography/text-base/text-base.interface';\n\nexport type TextButtonSizes = Extract<TextSize, 's' | 'm' | 'l' | 'xl'>;\n"]}
