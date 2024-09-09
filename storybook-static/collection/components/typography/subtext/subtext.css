@@ -1,0 +1,8 @@
+:host {
+  display: block;
+  --color: var(--color-primary);
+}
+:host true-text-base {
+  --line-height: 20px;
+  --text-color: var(--color);
+}

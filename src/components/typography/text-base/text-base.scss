@@ -1,0 +1,90 @@
+:host {
+    display: block;
+    --max-lines: initial;
+    --line-height: initial;
+    --font-weight: 400;
+    --font-size: var(--m-font-size);
+    --font-family: var(--app-font-family);
+    --letter-spacing: initial;
+    --text-color: var(--color-primary);
+    --text-transform: none;
+
+    align-items: center;
+
+    color: var(--text-color, currentColor);
+
+    font-variant-numeric: var(--font-variant-numeric);
+
+    span {
+        font-size: var(--font-size);
+        font-weight: var(--font-weight);
+        font-family: var(--app-font-family);
+        letter-spacing: var(--letter-spacing);
+        line-height: var(--line-height);
+        text-transform: var(--text-transform);
+        align-items: center;
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        -webkit-font-smoothing: antialiased;
+    }
+}
+
+// Transition color on load to prevent color flashing
+:host(.loaded) {
+    transition: color 0.2s ease-in-out;
+}
+
+// Text Sizes
+$sizes: (
+    xxxl: 40px,
+    xxl: 32px,
+    xl: 24px,
+    l: 20px,
+    m: 16px,
+    s: 14px,
+    xs: 12px,
+    xxs: 10px
+);
+
+@each $name, $size in $sizes {
+    $varName: --#{$name}-font-size;
+
+    :host {
+        #{$varName}: #{$size};
+    }
+
+    :host([size='#{$name}']) {
+        --font-size: var(#{$varName}) !important;
+    }
+}
+
+// Text Weights
+$weights: (
+    extra-bold: 800,
+    bold: 700,
+    medium: 500,
+    regular: 400
+);
+
+@each $name, $weight in $weights {
+    :host([weight='#{$name}']) {
+        --font-weight: #{$weight} !important;
+    }
+}
+
+// Max Lines Truncation
+// Webkit only
+:host([max-lines]) {
+    span {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-word;
+        visibility: visible;
+
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: var(--max-lines);
+    }
+}

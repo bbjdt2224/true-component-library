@@ -1,0 +1,99 @@
+@import '../../../styles/mixin/button';
+
+:host {
+    display: inline-flex;
+
+    --padding: 2px 4px;
+    --min-width: max-content;
+
+    --align-items: baseline;
+
+    --slot-end-gap: 0;
+    --slot-start-gap: 0;
+
+    // Primary action style: Default
+    --color: var(--color-brand-primary-blue);
+    --color-disabled: var(--color-tertiary);
+
+    button {
+        @include button();
+
+        width: 100%;
+        min-width: var(--min-width);
+
+        color: var(--color);
+        padding: var(--padding);
+        border-radius: 2px;
+
+        display: inline-flex;
+        align-items: var(--align-items);
+
+        true-text-base {
+            color: var(--color);
+        }
+
+        .content {
+            border-bottom: 1px solid transparent;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+
+            margin-right: var(--slot-end-gap);
+            margin-left: var(--slot-start-gap);
+        }
+    }
+}
+
+:host(.activated:not([disabled])) {
+    button {
+        &:active,
+        &:focus,
+        &:hover {
+            .content {
+                border-color: currentColor;
+            }
+        }
+    }
+}
+
+@media (any-hover: hover) {
+    :host(:hover:not([disabled])) {
+        button {
+            &:active,
+            &:focus,
+            &:hover {
+                .content {
+                    border-color: currentColor;
+                }
+            }
+        }
+    }
+}
+
+// Secondary Action Style
+:host([type="secondary"]) {
+    --color: var(--color-secondary);
+    --color-disabled: var(--color-tertiary);
+}
+
+// Tertiary Action Style
+:host([type="tertiary"]) {
+    --color: var(--color-tertiary);
+    --color-disabled: var(--color-tertiary);
+}
+
+// Brand Action Style
+:host([type="brand"]) {
+    --color: var(--color-custom-brand-accent);
+    --color-disabled: var(--color-custom-brand-accent);
+}
+
+:host([disabled]) {
+    --color: var(--color-disabled);
+}
+
+a {
+    // removes all default <a> tag styling since we are styling the parent button
+    all: unset;
+    max-width: 100%;
+}

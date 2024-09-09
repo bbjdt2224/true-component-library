@@ -1,0 +1,16 @@
+@mixin selection-row {
+    --min-height: 48px;
+    min-height: var(--min-height);
+
+    display: flex;
+    align-items: center;
+    
+    width: 100%;
+
+    --padding: 0 16px;
+    padding: var(--padding);
+    
+    box-sizing: border-box;
+    word-wrap: break-word;
+    user-select: none;
+}

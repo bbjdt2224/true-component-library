@@ -1,0 +1,45 @@
+@mixin form-control {
+    --input-border-color: var(--bg-color-tertiary);
+    border: 2px solid var(--input-border-color);
+    height: 48px;
+    min-height: 48px;
+    width: 632px;
+    border-radius: 4px;
+    padding: 0 6px;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--color-primary);
+    font-family: var(--app-font-family);
+    background: var(--bg-color-secondary);
+    -webkit-appearance: none;
+
+    transition: border-color ease-in-out .2s;
+
+    &::placeholder {
+        color: var(--color-tertiary);
+    }
+
+    &:active,
+    &:focus {
+        border-color: var(--color-true-primary-blue);
+        outline: 0;
+    }
+
+    &::-ms-clear {
+        display: none;
+        height: 0;
+        width: 0;
+    }
+
+    &::-webkit-search-decoration,
+    &::-webkit-search-cancel-button,
+    &::-webkit-search-results-button,
+    &::-webkit-search-results-decoration {
+        -webkit-appearance: none;
+    }
+
+    &[disabled], &:disabled {
+        cursor: not-allowed !important;
+    }
+
+}

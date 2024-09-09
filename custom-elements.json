@@ -1,0 +1,2483 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "loader/cdn.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "loader/index.cjs.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "loader/index.es2017.js",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "*",
+          "declaration": {
+            "name": "*",
+            "package": "../dist/esm/polyfills/index.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "*",
+          "declaration": {
+            "name": "*",
+            "package": "../dist/esm/loader.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "loader/index.js",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "*",
+          "declaration": {
+            "name": "*",
+            "package": "../dist/esm/polyfills/index.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "*",
+          "declaration": {
+            "name": "*",
+            "package": "../dist/esm/loader.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/index.cjs.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/index.js",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "*",
+          "declaration": {
+            "name": "*",
+            "package": "./esm/index.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/constants.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "FillerText",
+          "type": {
+            "text": "string"
+          },
+          "default": "'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "FillerText",
+          "declaration": {
+            "name": "FillerText",
+            "module": "src/constants.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/index.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "*",
+          "declaration": {
+            "name": "*",
+            "package": "./components"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/cjs/index-43113388.js",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "tagName"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "tagName",
+          "declaration": {
+            "name": "anonymous_0",
+            "module": "dist/cjs/index-43113388.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/cjs/index.cjs.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/cjs/loader.cjs.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/cjs/my-component.cjs.entry.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/cjs/true-components.cjs.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/cjs/true-text-base.cjs.entry.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/cjs/true-text.cjs.entry.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/collection/constants.js",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "FillerText",
+          "type": {
+            "text": "string"
+          },
+          "default": "'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "FillerText",
+          "declaration": {
+            "name": "FillerText",
+            "module": "dist/collection/constants.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/collection/index.js",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "*",
+          "declaration": {
+            "name": "*",
+            "package": "./components"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/components/index.js",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "getAssetPath",
+          "declaration": {
+            "name": "getAssetPath",
+            "package": "@stencil/core/internal/client"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "setAssetPath",
+          "declaration": {
+            "name": "setAssetPath",
+            "package": "@stencil/core/internal/client"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "setNonce",
+          "declaration": {
+            "name": "setNonce",
+            "package": "@stencil/core/internal/client"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "setPlatformOptions",
+          "declaration": {
+            "name": "setPlatformOptions",
+            "package": "@stencil/core/internal/client"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/components/my-component.js",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "MyComponent$1"
+        },
+        {
+          "kind": "variable",
+          "name": "MyComponent",
+          "default": "MyComponent$1"
+        },
+        {
+          "kind": "variable",
+          "name": "defineCustomElement",
+          "default": "defineCustomElement$1"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "tagName",
+          "declaration": {
+            "name": "MyComponent$1",
+            "module": "dist/components/my-component.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "MyComponent",
+          "declaration": {
+            "name": "MyComponent",
+            "module": "dist/components/my-component.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "defineCustomElement",
+          "declaration": {
+            "name": "defineCustomElement",
+            "module": "dist/components/my-component.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/components/text-base.js",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "TextBase"
+        },
+        {
+          "kind": "function",
+          "name": "defineCustomElement"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "tagName",
+          "declaration": {
+            "name": "TextBase",
+            "module": "dist/components/text-base.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "T",
+          "declaration": {
+            "name": "TextBase",
+            "module": "dist/components/text-base.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "d",
+          "declaration": {
+            "name": "defineCustomElement",
+            "module": "dist/components/text-base.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/components/true-text-base.js",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "TrueTextBase",
+          "default": "TextBase"
+        },
+        {
+          "kind": "variable",
+          "name": "defineCustomElement",
+          "default": "defineCustomElement$1"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "TrueTextBase",
+          "declaration": {
+            "name": "TrueTextBase",
+            "module": "dist/components/true-text-base.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "defineCustomElement",
+          "declaration": {
+            "name": "defineCustomElement",
+            "module": "dist/components/true-text-base.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/components/true-text.js",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "Text"
+        },
+        {
+          "kind": "variable",
+          "name": "TrueText",
+          "default": "Text"
+        },
+        {
+          "kind": "variable",
+          "name": "defineCustomElement",
+          "default": "defineCustomElement$1"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "tagName",
+          "declaration": {
+            "name": "Text",
+            "module": "dist/components/true-text.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "TrueText",
+          "declaration": {
+            "name": "TrueText",
+            "module": "dist/components/true-text.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "defineCustomElement",
+          "declaration": {
+            "name": "defineCustomElement",
+            "module": "dist/components/true-text.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/esm/index-e40d7d99.js",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "h",
+          "parameters": [
+            {
+              "name": "nodeName"
+            },
+            {
+              "name": "vnodeData"
+            },
+            {
+              "name": "children"
+            }
+          ],
+          "description": "Production h() function based on Preact by\nJason Miller (@developit)\nLicensed under the MIT License\nhttps://github.com/developit/preact/blob/master/LICENSE\n\nModified for Stencil's compiler and vdom"
+        },
+        {
+          "kind": "variable",
+          "name": "Host",
+          "type": {
+            "text": "object"
+          },
+          "default": "{}"
+        },
+        {
+          "kind": "variable",
+          "name": "tagName"
+        },
+        {
+          "kind": "function",
+          "name": "bootstrapLazy",
+          "parameters": [
+            {
+              "name": "lazyBundles"
+            },
+            {
+              "name": "options",
+              "default": "{}"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "setNonce",
+          "parameters": [
+            {
+              "name": "nonce",
+              "description": "The value to be assigned to the platform nonce property."
+            }
+          ],
+          "description": "Assigns the given value to the nonce property on the runtime platform object.\nDuring runtime, this value is used to set the nonce attribute on all dynamically created script and style tags.",
+          "return": {
+            "type": {
+              "text": ""
+            }
+          }
+        },
+        {
+          "kind": "function",
+          "name": "registerInstance",
+          "parameters": [
+            {
+              "name": "lazyInstance",
+              "description": "the lazy instance of interest"
+            },
+            {
+              "name": "hostRef",
+              "description": "that instances `HostRef` object"
+            }
+          ],
+          "description": "Register a lazy instance with the hostRefs object so it's\ncorresponding d.HostRef can be retrieved later.",
+          "return": {
+            "type": {
+              "text": ""
+            }
+          }
+        },
+        {
+          "kind": "function",
+          "name": "promiseResolve",
+          "parameters": [
+            {
+              "name": "v"
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "tagName",
+          "declaration": {
+            "name": "anonymous_0",
+            "module": "dist/esm/index-e40d7d99.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "H",
+          "declaration": {
+            "name": "Host",
+            "module": "dist/esm/index-e40d7d99.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "b",
+          "declaration": {
+            "name": "bootstrapLazy",
+            "module": "dist/esm/index-e40d7d99.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "h",
+          "declaration": {
+            "name": "h",
+            "module": "dist/esm/index-e40d7d99.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "p",
+          "declaration": {
+            "name": "promiseResolve",
+            "module": "dist/esm/index-e40d7d99.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "r",
+          "declaration": {
+            "name": "registerInstance",
+            "module": "dist/esm/index-e40d7d99.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "s",
+          "declaration": {
+            "name": "setNonce",
+            "module": "dist/esm/index-e40d7d99.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/esm/index.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/esm/loader.js",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "defineCustomElements",
+          "parameters": [
+            {
+              "name": "win"
+            },
+            {
+              "name": "options"
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "setNonce",
+          "declaration": {
+            "name": "s",
+            "module": "./index-e40d7d99.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "defineCustomElements",
+          "declaration": {
+            "name": "defineCustomElements",
+            "module": "dist/esm/loader.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/esm/my-component.entry.js",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "MyComponent",
+          "default": "class {\n  constructor(hostRef) {\n    registerInstance(this, hostRef);\n    this.first = undefined;\n    this.middle = undefined;\n    this.last = undefined;\n  }\n  getText() {\n    return format(this.first, this.middle, this.last);\n  }\n  render() {\n    return h(\"div\", null, \"Hello, World! I'm \", this.getText());\n  }\n}"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "my_component",
+          "declaration": {
+            "name": "MyComponent",
+            "module": "dist/esm/my-component.entry.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/esm/true-components.js",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "setNonce",
+          "declaration": {
+            "name": "s",
+            "module": "./index-e40d7d99.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/esm/true-text-base.entry.js",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "TextBase",
+          "default": "class {\n  constructor(hostRef) {\n    registerInstance(this, hostRef);\n    this.size = 'm';\n    this.color = undefined;\n    this.weight = undefined;\n    this.maxLines = undefined;\n    this.loaded = undefined;\n  }\n  componentDidLoad() {\n    // Set loaded to true so colors are correct\n    requestAnimationFrame(() => {\n      this.loaded = true;\n    });\n  }\n  render() {\n    const style = {};\n    if (this.maxLines != null) {\n      style['--max-lines'] = this.maxLines;\n    }\n    if (this.color) {\n      style['--text-color'] = `var(--color-${this.color})`;\n    }\n    return (h(Host, { style: style, class: this.loaded ? 'loaded' : '' }, h(\"span\", null, h(\"slot\", null))));\n  }\n}"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "true_text_base",
+          "declaration": {
+            "name": "TextBase",
+            "module": "dist/esm/true-text-base.entry.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/esm/true-text.entry.js",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "Text",
+          "default": "class {\n  constructor(hostRef) {\n    registerInstance(this, hostRef);\n    this.weight = 'regular';\n    this.color = undefined;\n    this.maxLines = undefined;\n  }\n  render() {\n    return (h(\"true-text-base\", { size: \"m\", weight: this.weight, maxLines: this.maxLines, color: this.color }, h(\"slot\", null)));\n  }\n}"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "true_text",
+          "declaration": {
+            "name": "Text",
+            "module": "dist/esm/true-text.entry.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/true-components/index.esm.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/true-components/p-1b17d387.entry.js",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "s",
+          "default": "class{constructor(i){t(this,i);this.size=\"m\";this.color=undefined;this.weight=undefined;this.maxLines=undefined;this.loaded=undefined}componentDidLoad(){requestAnimationFrame((()=>{this.loaded=true}))}render(){const t={};if(this.maxLines!=null){t[\"--max-lines\"]=this.maxLines}if(this.color){t[\"--text-color\"]=`var(--color-${this.color})`}return i(o,{style:t,class:this.loaded?\"loaded\":\"\"},i(\"span\",null,i(\"slot\",null)))}}"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "true_text_base",
+          "declaration": {
+            "name": "s",
+            "module": "dist/true-components/p-1b17d387.entry.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/true-components/p-1f96feb1.js",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "s",
+          "type": {
+            "text": "boolean"
+          },
+          "default": "false"
+        },
+        {
+          "kind": "function",
+          "name": "r",
+          "parameters": [
+            {
+              "name": "t"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "d",
+          "parameters": [
+            {
+              "name": "t"
+            },
+            {
+              "name": "n"
+            },
+            {
+              "name": "e"
+            }
+          ]
+        },
+        {
+          "kind": "variable",
+          "name": "h",
+          "type": {
+            "text": "object"
+          },
+          "default": "{}"
+        },
+        {
+          "kind": "function",
+          "name": "p",
+          "parameters": [
+            {
+              "name": "t"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "b",
+          "parameters": [
+            {
+              "name": "t"
+            },
+            {
+              "name": "n"
+            },
+            {
+              "name": "e"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "H",
+          "parameters": [
+            {
+              "name": "t"
+            },
+            {
+              "name": "n"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "Z",
+          "parameters": [
+            {
+              "name": "t"
+            },
+            {
+              "name": "n",
+              "default": "{}"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "tt",
+          "parameters": [
+            {
+              "name": "t"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "st",
+          "parameters": [
+            {
+              "name": "t"
+            },
+            {
+              "name": "n"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "yt",
+          "parameters": [
+            {
+              "name": "t"
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "H",
+          "declaration": {
+            "name": "h",
+            "module": "dist/true-components/p-1f96feb1.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "b",
+          "declaration": {
+            "name": "Z",
+            "module": "dist/true-components/p-1f96feb1.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "h",
+          "declaration": {
+            "name": "d",
+            "module": "dist/true-components/p-1f96feb1.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "p",
+          "declaration": {
+            "name": "yt",
+            "module": "dist/true-components/p-1f96feb1.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "r",
+          "declaration": {
+            "name": "st",
+            "module": "dist/true-components/p-1f96feb1.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "s",
+          "declaration": {
+            "name": "tt",
+            "module": "dist/true-components/p-1f96feb1.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/true-components/p-6b9329b5.entry.js",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "r",
+          "default": "class{constructor(s){t(this,s);this.weight=\"regular\";this.color=undefined;this.maxLines=undefined}render(){return s(\"true-text-base\",{size:\"m\",weight:this.weight,maxLines:this.maxLines,color:this.color},s(\"slot\",null))}}"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "true_text",
+          "declaration": {
+            "name": "r",
+            "module": "dist/true-components/p-6b9329b5.entry.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/true-components/p-cb194d07.entry.js",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "i",
+          "default": "class{constructor(n){t(this,n);this.first=undefined;this.middle=undefined;this.last=undefined}getText(){return s(this.first,this.middle,this.last)}render(){return n(\"div\",null,\"Hello, World! I'm \",this.getText())}}"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "my_component",
+          "declaration": {
+            "name": "i",
+            "module": "dist/true-components/p-cb194d07.entry.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/true-components/true-components.esm.js",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "s",
+          "type": {
+            "text": "object"
+          },
+          "default": "{}"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "setNonce",
+          "declaration": {
+            "name": "s",
+            "module": "\"./p-1f96feb1.js\""
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/stories/Button.js",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "createButton",
+          "parameters": [
+            {
+              "name": "{\n  primary = false,\n  size = 'medium',\n  backgroundColor,\n  label,\n  onClick,\n}"
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "createButton",
+          "declaration": {
+            "name": "createButton",
+            "module": "src/stories/Button.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/stories/Button.stories.js",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "Primary",
+          "type": {
+            "text": "object"
+          },
+          "default": "{\n  args: {\n    primary: true,\n    label: 'Button',\n  },\n}"
+        },
+        {
+          "kind": "variable",
+          "name": "Secondary",
+          "type": {
+            "text": "object"
+          },
+          "default": "{\n  args: {\n    label: 'Button',\n  },\n}"
+        },
+        {
+          "kind": "variable",
+          "name": "Large",
+          "type": {
+            "text": "object"
+          },
+          "default": "{\n  args: {\n    size: 'large',\n    label: 'Button',\n  },\n}"
+        },
+        {
+          "kind": "variable",
+          "name": "Small",
+          "type": {
+            "text": "object"
+          },
+          "default": "{\n  args: {\n    size: 'small',\n    label: 'Button',\n  },\n}"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/stories/Button.stories.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Primary",
+          "declaration": {
+            "name": "Primary",
+            "module": "src/stories/Button.stories.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Secondary",
+          "declaration": {
+            "name": "Secondary",
+            "module": "src/stories/Button.stories.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Large",
+          "declaration": {
+            "name": "Large",
+            "module": "src/stories/Button.stories.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Small",
+          "declaration": {
+            "name": "Small",
+            "module": "src/stories/Button.stories.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/stories/Header.js",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "createHeader",
+          "parameters": [
+            {
+              "name": "{ user, onLogout, onLogin, onCreateAccount }"
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "createHeader",
+          "declaration": {
+            "name": "createHeader",
+            "module": "src/stories/Header.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/stories/Header.stories.js",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "LoggedIn",
+          "type": {
+            "text": "object"
+          },
+          "default": "{\n  args: {\n    user: {\n      name: 'Jane Doe',\n    },\n  },\n}"
+        },
+        {
+          "kind": "variable",
+          "name": "LoggedOut",
+          "type": {
+            "text": "object"
+          },
+          "default": "{}"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/stories/Header.stories.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "LoggedIn",
+          "declaration": {
+            "name": "LoggedIn",
+            "module": "src/stories/Header.stories.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "LoggedOut",
+          "declaration": {
+            "name": "LoggedOut",
+            "module": "src/stories/Header.stories.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/stories/Page.js",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "createPage"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "createPage",
+          "declaration": {
+            "name": "createPage",
+            "module": "src/stories/Page.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/stories/Page.stories.js",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "LoggedOut",
+          "type": {
+            "text": "object"
+          },
+          "default": "{}"
+        },
+        {
+          "kind": "variable",
+          "name": "LoggedIn",
+          "type": {
+            "text": "object"
+          },
+          "default": "{\n  play: async ({ canvasElement }) => {\n    const canvas = within(canvasElement);\n    const loginButton = await canvas.getByRole('button', {\n      name: /Log in/i,\n    });\n    await userEvent.click(loginButton);\n  },\n}"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/stories/Page.stories.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "LoggedOut",
+          "declaration": {
+            "name": "LoggedOut",
+            "module": "src/stories/Page.stories.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "LoggedIn",
+          "declaration": {
+            "name": "LoggedIn",
+            "module": "src/stories/Page.stories.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/utils/utils.spec.ts",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/utils/utils.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "format",
+          "return": {
+            "type": {
+              "text": "string"
+            }
+          },
+          "parameters": [
+            {
+              "name": "first",
+              "type": {
+                "text": "string"
+              }
+            },
+            {
+              "name": "middle",
+              "type": {
+                "text": "string"
+              }
+            },
+            {
+              "name": "last",
+              "type": {
+                "text": "string"
+              }
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "format",
+          "declaration": {
+            "name": "format",
+            "module": "src/utils/utils.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "www/build/index.esm.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "www/build/p-1b17d387.entry.js",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "s",
+          "default": "class{constructor(i){t(this,i);this.size=\"m\";this.color=undefined;this.weight=undefined;this.maxLines=undefined;this.loaded=undefined}componentDidLoad(){requestAnimationFrame((()=>{this.loaded=true}))}render(){const t={};if(this.maxLines!=null){t[\"--max-lines\"]=this.maxLines}if(this.color){t[\"--text-color\"]=`var(--color-${this.color})`}return i(o,{style:t,class:this.loaded?\"loaded\":\"\"},i(\"span\",null,i(\"slot\",null)))}}"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "true_text_base",
+          "declaration": {
+            "name": "s",
+            "module": "www/build/p-1b17d387.entry.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "www/build/p-1f96feb1.js",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "s",
+          "type": {
+            "text": "boolean"
+          },
+          "default": "false"
+        },
+        {
+          "kind": "function",
+          "name": "r",
+          "parameters": [
+            {
+              "name": "t"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "d",
+          "parameters": [
+            {
+              "name": "t"
+            },
+            {
+              "name": "n"
+            },
+            {
+              "name": "e"
+            }
+          ]
+        },
+        {
+          "kind": "variable",
+          "name": "h",
+          "type": {
+            "text": "object"
+          },
+          "default": "{}"
+        },
+        {
+          "kind": "function",
+          "name": "p",
+          "parameters": [
+            {
+              "name": "t"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "b",
+          "parameters": [
+            {
+              "name": "t"
+            },
+            {
+              "name": "n"
+            },
+            {
+              "name": "e"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "H",
+          "parameters": [
+            {
+              "name": "t"
+            },
+            {
+              "name": "n"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "Z",
+          "parameters": [
+            {
+              "name": "t"
+            },
+            {
+              "name": "n",
+              "default": "{}"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "tt",
+          "parameters": [
+            {
+              "name": "t"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "st",
+          "parameters": [
+            {
+              "name": "t"
+            },
+            {
+              "name": "n"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "yt",
+          "parameters": [
+            {
+              "name": "t"
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "H",
+          "declaration": {
+            "name": "h",
+            "module": "www/build/p-1f96feb1.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "b",
+          "declaration": {
+            "name": "Z",
+            "module": "www/build/p-1f96feb1.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "h",
+          "declaration": {
+            "name": "d",
+            "module": "www/build/p-1f96feb1.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "p",
+          "declaration": {
+            "name": "yt",
+            "module": "www/build/p-1f96feb1.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "r",
+          "declaration": {
+            "name": "st",
+            "module": "www/build/p-1f96feb1.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "s",
+          "declaration": {
+            "name": "tt",
+            "module": "www/build/p-1f96feb1.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "www/build/p-6b9329b5.entry.js",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "r",
+          "default": "class{constructor(s){t(this,s);this.weight=\"regular\";this.color=undefined;this.maxLines=undefined}render(){return s(\"true-text-base\",{size:\"m\",weight:this.weight,maxLines:this.maxLines,color:this.color},s(\"slot\",null))}}"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "true_text",
+          "declaration": {
+            "name": "r",
+            "module": "www/build/p-6b9329b5.entry.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "www/build/p-cb194d07.entry.js",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "i",
+          "default": "class{constructor(n){t(this,n);this.first=undefined;this.middle=undefined;this.last=undefined}getText(){return s(this.first,this.middle,this.last)}render(){return n(\"div\",null,\"Hello, World! I'm \",this.getText())}}"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "my_component",
+          "declaration": {
+            "name": "i",
+            "module": "www/build/p-cb194d07.entry.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "www/build/true-components.esm.js",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "s",
+          "type": {
+            "text": "object"
+          },
+          "default": "{}"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "setNonce",
+          "declaration": {
+            "name": "s",
+            "module": "\"./p-1f96feb1.js\""
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "www/build/true-components.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/collection/stories/Button.js",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "createButton",
+          "parameters": [
+            {
+              "name": "{\n  primary = false,\n  size = 'medium',\n  backgroundColor,\n  label,\n  onClick,\n}"
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "createButton",
+          "declaration": {
+            "name": "createButton",
+            "module": "dist/collection/stories/Button.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/collection/stories/Button.stories.js",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "Primary",
+          "type": {
+            "text": "object"
+          },
+          "default": "{\n  args: {\n    primary: true,\n    label: 'Button',\n  },\n}"
+        },
+        {
+          "kind": "variable",
+          "name": "Secondary",
+          "type": {
+            "text": "object"
+          },
+          "default": "{\n  args: {\n    label: 'Button',\n  },\n}"
+        },
+        {
+          "kind": "variable",
+          "name": "Large",
+          "type": {
+            "text": "object"
+          },
+          "default": "{\n  args: {\n    size: 'large',\n    label: 'Button',\n  },\n}"
+        },
+        {
+          "kind": "variable",
+          "name": "Small",
+          "type": {
+            "text": "object"
+          },
+          "default": "{\n  args: {\n    size: 'small',\n    label: 'Button',\n  },\n}"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "dist/collection/stories/Button.stories.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Primary",
+          "declaration": {
+            "name": "Primary",
+            "module": "dist/collection/stories/Button.stories.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Secondary",
+          "declaration": {
+            "name": "Secondary",
+            "module": "dist/collection/stories/Button.stories.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Large",
+          "declaration": {
+            "name": "Large",
+            "module": "dist/collection/stories/Button.stories.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Small",
+          "declaration": {
+            "name": "Small",
+            "module": "dist/collection/stories/Button.stories.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/collection/stories/Header.js",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "createHeader",
+          "parameters": [
+            {
+              "name": "{ user, onLogout, onLogin, onCreateAccount }"
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "createHeader",
+          "declaration": {
+            "name": "createHeader",
+            "module": "dist/collection/stories/Header.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/collection/stories/Header.stories.js",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "LoggedIn",
+          "type": {
+            "text": "object"
+          },
+          "default": "{\n  args: {\n    user: {\n      name: 'Jane Doe',\n    },\n  },\n}"
+        },
+        {
+          "kind": "variable",
+          "name": "LoggedOut",
+          "type": {
+            "text": "object"
+          },
+          "default": "{}"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "dist/collection/stories/Header.stories.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "LoggedIn",
+          "declaration": {
+            "name": "LoggedIn",
+            "module": "dist/collection/stories/Header.stories.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "LoggedOut",
+          "declaration": {
+            "name": "LoggedOut",
+            "module": "dist/collection/stories/Header.stories.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/collection/stories/Page.js",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "createPage"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "createPage",
+          "declaration": {
+            "name": "createPage",
+            "module": "dist/collection/stories/Page.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/collection/stories/Page.stories.js",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "LoggedOut",
+          "type": {
+            "text": "object"
+          },
+          "default": "{}"
+        },
+        {
+          "kind": "variable",
+          "name": "LoggedIn",
+          "type": {
+            "text": "object"
+          },
+          "default": "{\n  play: async ({ canvasElement }) => {\n    const canvas = within(canvasElement);\n    const loginButton = await canvas.getByRole('button', {\n      name: /Log in/i,\n    });\n    await userEvent.click(loginButton);\n  },\n}"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "dist/collection/stories/Page.stories.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "LoggedOut",
+          "declaration": {
+            "name": "LoggedOut",
+            "module": "dist/collection/stories/Page.stories.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "LoggedIn",
+          "declaration": {
+            "name": "LoggedIn",
+            "module": "dist/collection/stories/Page.stories.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/collection/utils/utils.js",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "format",
+          "parameters": [
+            {
+              "name": "first"
+            },
+            {
+              "name": "middle"
+            },
+            {
+              "name": "last"
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "format",
+          "declaration": {
+            "name": "format",
+            "module": "dist/collection/utils/utils.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/collection/utils/utils.spec.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/esm/polyfills/core-js.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/esm/polyfills/dom.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/esm/polyfills/es5-html-element.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/esm/polyfills/index.js",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "applyPolyfills"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "applyPolyfills",
+          "declaration": {
+            "name": "applyPolyfills",
+            "module": "dist/esm/polyfills/index.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/esm/polyfills/system.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/my-component/my-component.e2e.ts",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/my-component/my-component.spec.ts",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/my-component/my-component.stories.tsx",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "Default"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/components/my-component/my-component.stories.tsx"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Default",
+          "declaration": {
+            "name": "Default",
+            "module": "src/components/my-component/my-component.stories.tsx"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/my-component/my-component.tsx",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "MyComponent",
+          "members": [
+            {
+              "kind": "field",
+              "name": "first",
+              "type": {
+                "text": "string"
+              },
+              "description": "The first name"
+            },
+            {
+              "kind": "field",
+              "name": "middle",
+              "type": {
+                "text": "string"
+              },
+              "description": "The middle name"
+            },
+            {
+              "kind": "field",
+              "name": "last",
+              "type": {
+                "text": "string"
+              },
+              "description": "The last name"
+            },
+            {
+              "kind": "method",
+              "name": "getText",
+              "privacy": "private",
+              "return": {
+                "type": {
+                  "text": "string"
+                }
+              }
+            },
+            {
+              "kind": "method",
+              "name": "render"
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "MyComponent",
+          "declaration": {
+            "name": "MyComponent",
+            "module": "src/components/my-component/my-component.tsx"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/collection/components/my-component/my-component.e2e.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/collection/components/my-component/my-component.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "MyComponent",
+          "members": [
+            {
+              "kind": "method",
+              "name": "getText"
+            },
+            {
+              "kind": "method",
+              "name": "render"
+            },
+            {
+              "kind": "field",
+              "name": "is",
+              "static": true,
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "encapsulation",
+              "static": true,
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "originalStyleUrls",
+              "static": true,
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "styleUrls",
+              "static": true,
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "properties",
+              "static": true,
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "first",
+              "default": "undefined"
+            },
+            {
+              "kind": "field",
+              "name": "middle",
+              "default": "undefined"
+            },
+            {
+              "kind": "field",
+              "name": "last",
+              "default": "undefined"
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "MyComponent",
+          "declaration": {
+            "name": "MyComponent",
+            "module": "dist/collection/components/my-component/my-component.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/collection/components/my-component/my-component.spec.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/typography/text/text.stories.tsx",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "meta",
+          "type": {
+            "text": "Meta<args>"
+          },
+          "default": "{\r\n  title: 'Typography/Text',\r\n  component: 'true-text',\r\n  tags: ['autodocs'],\r\n}"
+        },
+        {
+          "kind": "variable",
+          "name": "Default",
+          "type": {
+            "text": "Story"
+          },
+          "default": "{}"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "name": "meta",
+            "module": "src/components/typography/text/text.stories.tsx"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Default",
+          "declaration": {
+            "name": "Default",
+            "module": "src/components/typography/text/text.stories.tsx"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/typography/text/text.tsx",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "Text",
+          "members": [
+            {
+              "kind": "field",
+              "name": "weight",
+              "type": {
+                "text": "Extract<TextWeight, 'regular' | 'medium'>"
+              },
+              "default": "'regular'",
+              "description": "Passthrough prop for weight of the text"
+            },
+            {
+              "kind": "field",
+              "name": "color",
+              "type": {
+                "text": "TextColor"
+              },
+              "description": "Passthrough prop for the color of the text"
+            },
+            {
+              "kind": "field",
+              "name": "maxLines",
+              "type": {
+                "text": "string"
+              },
+              "description": "The maximum lines to display before truncating the text.\r\nDefault behavior shows all lines of text with no truncation."
+            },
+            {
+              "kind": "method",
+              "name": "render"
+            }
+          ],
+          "tagName": "tagName",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "Text",
+          "declaration": {
+            "name": "Text",
+            "module": "src/components/typography/text/text.tsx"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/typography/text-base/text-base.interface.ts",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/typography/text-base/text-base.stories.tsx",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "meta",
+          "type": {
+            "text": "Meta<args>"
+          },
+          "default": "{\r\n  title: 'Typography/Text Base',\r\n  component: 'true-text-base',\r\n  tags: ['autodocs'],\r\n}"
+        },
+        {
+          "kind": "variable",
+          "name": "Default",
+          "type": {
+            "text": "Story"
+          },
+          "default": "{\r\n    render: args => `<true-text-base size=${args.size} color=${args.color} weight=${args.weight} maxLines=${args.maxLines}>Default</true-text-base>`,\r\n    decorators: [story => `<div class='v-flex'\">${story()}</div>`],\r\n    args: {\r\n      size: 'm',\r\n      color: 'primary',\r\n      weight: 'regular',\r\n    },\r\n    argTypes: {\r\n      size: {\r\n        type: 'string',\r\n        description: 'The size of the text',\r\n        options: ['xxs', 'xs', 's', 'm', 'l', 'xl', 'xxl', 'xxxl'],\r\n        control: {\r\n          type: 'select',\r\n        },\r\n        table: {\r\n            defaultValue: { summary: 'm' },\r\n            type: { summary: 'xxs | xs | s | m | l | xl | xxl | xxxl'}\r\n        }\r\n      },\r\n      color: {\r\n        type: 'string',\r\n        description:\r\n          'The color of the text',\r\n        options: ['primary', 'secondary', 'tertiary', 'true-primary-blue', 'true-primary-green', 'true-primary-red', 'neutral-100'],\r\n        control: {\r\n          type: 'select',\r\n        },\r\n        table: {\r\n            defaultValue: { summary: 'primary' },\r\n            type: { summary: 'primary | secondary | tertiary | true-primary-blue | true-primary-green | true-primary-red | neutral-100'}\r\n        }\r\n      },\r\n      weight: {\r\n        type: 'string',\r\n        description: 'The weight of the text',\r\n        options: ['extra-bold', 'bold', 'medium', 'regular'],\r\n        control: {\r\n          type: 'select',\r\n        },\r\n        table: {\r\n            defaultValue: { summary: 'regular'},\r\n            type: { summary: 'extra-bold | bold | medium | regular' }\r\n        }\r\n      },\r\n      maxLines: {\r\n        name: 'max-lines',\r\n        type: 'string',\r\n        description: 'Maximum lines of text before truncation (webkit only)',\r\n      },\r\n    }\r\n}"
+        },
+        {
+          "kind": "variable",
+          "name": "Colors",
+          "type": {
+            "text": "Story"
+          },
+          "default": "{\r\n  render: () => `\r\n    <true-text-base color=\"primary\">Primary</true-text-base>\r\n    <true-text-base color=\"secondary\">Secondary</true-text-base>\r\n    <true-text-base color=\"tertiary\">Tertiary</true-text-base>\r\n    <true-text-base color=\"true-primary-blue\">Blue</true-text-base>\r\n    <true-text-base color=\"true-primary-green\">Green</true-text-base>\r\n    <true-text-base color=\"true-primary-red\">Red</true-text-base>\r\n    <true-text-base color=\"neutral-100\">Neutral 100</true-text-base>\r\n  `,\r\n}"
+        },
+        {
+          "kind": "variable",
+          "name": "Sizes",
+          "type": {
+            "text": "Story"
+          },
+          "default": "{\r\n  render: () => `\r\n      <true-text-base size=\"xxxl\">Size XXXL</true-text-base>\r\n      <true-text-base size=\"xxl\">Size XXL</true-text-base>\r\n      <true-text-base size=\"xl\">Size XL</true-text-base>\r\n      <true-text-base size=\"l\">Size L</true-text-base>\r\n      <true-text-base size=\"m\">Size M</true-text-base>\r\n      <true-text-base size=\"s\">Size S</true-text-base>\r\n      <true-text-base size=\"xs\">Size XS</true-text-base>\r\n      <true-text-base size=\"xxs\">Size XXS</true-text-base>\r\n    `,\r\n}"
+        },
+        {
+          "kind": "variable",
+          "name": "Weights",
+          "type": {
+            "text": "Story"
+          },
+          "default": "{\r\n  render: () => `\r\n      <true-text-base weight=\"extra-bold\">Extra Bold</true-text-base>\r\n      <true-text-base weight=\"bold\">Bold</true-text-base>\r\n      <true-text-base weight=\"medium\">Medium</true-text-base>\r\n    `,\r\n}"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "name": "meta",
+            "module": "src/components/typography/text-base/text-base.stories.tsx"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Default",
+          "declaration": {
+            "name": "Default",
+            "module": "src/components/typography/text-base/text-base.stories.tsx"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Colors",
+          "declaration": {
+            "name": "Colors",
+            "module": "src/components/typography/text-base/text-base.stories.tsx"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Sizes",
+          "declaration": {
+            "name": "Sizes",
+            "module": "src/components/typography/text-base/text-base.stories.tsx"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Weights",
+          "declaration": {
+            "name": "Weights",
+            "module": "src/components/typography/text-base/text-base.stories.tsx"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/typography/text-base/text-base.tsx",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "TextBase",
+          "members": [
+            {
+              "kind": "field",
+              "name": "size",
+              "type": {
+                "text": "TextSize"
+              },
+              "default": "'m'",
+              "description": "Size of the text"
+            },
+            {
+              "kind": "field",
+              "name": "color",
+              "type": {
+                "text": "TextColor"
+              },
+              "description": "Primary color of the text\r\nUses predefined css variables"
+            },
+            {
+              "kind": "field",
+              "name": "weight",
+              "type": {
+                "text": "TextWeight"
+              },
+              "description": "Weight of the text"
+            },
+            {
+              "kind": "field",
+              "name": "maxLines",
+              "type": {
+                "text": "string"
+              },
+              "description": "Maximum lines to display before truncating the text\r\nIf no value is given all lines will show"
+            },
+            {
+              "kind": "field",
+              "name": "loaded",
+              "type": {
+                "text": "boolean"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "componentDidLoad"
+            },
+            {
+              "kind": "method",
+              "name": "render"
+            }
+          ],
+          "tagName": "tagName",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "TextBase",
+          "declaration": {
+            "name": "TextBase",
+            "module": "src/components/typography/text-base/text-base.tsx"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/collection/components/typography/text/text.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "Text",
+          "members": [
+            {
+              "kind": "method",
+              "name": "render"
+            },
+            {
+              "kind": "field",
+              "name": "is",
+              "static": true,
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "encapsulation",
+              "static": true,
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "originalStyleUrls",
+              "static": true,
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "styleUrls",
+              "static": true,
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "properties",
+              "static": true,
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "weight",
+              "type": {
+                "text": "string"
+              },
+              "default": "'regular'"
+            },
+            {
+              "kind": "field",
+              "name": "color",
+              "default": "undefined"
+            },
+            {
+              "kind": "field",
+              "name": "maxLines",
+              "default": "undefined"
+            }
+          ],
+          "tagName": "tagName",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "Text",
+          "declaration": {
+            "name": "Text",
+            "module": "dist/collection/components/typography/text/text.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/collection/components/typography/text-base/text-base.interface.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/collection/components/typography/text-base/text-base.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "TextBase",
+          "members": [
+            {
+              "kind": "method",
+              "name": "componentDidLoad"
+            },
+            {
+              "kind": "method",
+              "name": "render"
+            },
+            {
+              "kind": "field",
+              "name": "is",
+              "static": true,
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "encapsulation",
+              "static": true,
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "originalStyleUrls",
+              "static": true,
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "styleUrls",
+              "static": true,
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "properties",
+              "static": true,
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "states",
+              "static": true,
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "size",
+              "type": {
+                "text": "string"
+              },
+              "default": "'m'"
+            },
+            {
+              "kind": "field",
+              "name": "color",
+              "default": "undefined"
+            },
+            {
+              "kind": "field",
+              "name": "weight",
+              "default": "undefined"
+            },
+            {
+              "kind": "field",
+              "name": "maxLines",
+              "default": "undefined"
+            },
+            {
+              "kind": "field",
+              "name": "loaded",
+              "default": "undefined"
+            }
+          ],
+          "tagName": "tagName",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "TextBase",
+          "declaration": {
+            "name": "TextBase",
+            "module": "dist/collection/components/typography/text-base/text-base.js"
+          }
+        }
+      ]
+    }
+  ]
+}

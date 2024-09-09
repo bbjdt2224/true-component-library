@@ -1,0 +1,28 @@
+@import './accessibility';
+$button-transition: 100ms ease-in-out;
+@mixin plainButton() {
+    cursor: pointer;
+    appearance: none;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    font-family: var(--app-font-family);
+
+    &[disabled] {
+        cursor: not-allowed;
+    }
+    &:focus {
+        outline: 0;
+    }
+    &::-moz-focus-inner {
+        border: 0;
+    }
+}
+@mixin button() {
+    @include plainButton();
+    &:focus {
+        &:not([disabled]):not(:active) {
+            @include focus-box-shadow();
+        }
+    }
+}

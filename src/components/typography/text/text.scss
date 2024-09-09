@@ -1,0 +1,11 @@
+:host {
+    display: block;
+    --color: var(--color-primary);
+    --text-line-height: 26px;
+
+
+    true-text-base {
+        --line-height: var(--text-line-height);
+        --text-color: var(--color);
+    }
+}

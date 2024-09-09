@@ -1,0 +1,1 @@
+{"version":3,"file":"loading-spinner.interface.js","sourceRoot":"","sources":["../../../../src/components/basic-app/loading-spinner/loading-spinner.interface.ts"],"names":[],"mappings":"","sourcesContent":["import { Sizes } from '../../../interface';\n\nexport type LoadingSpinnerSizes = Extract<Sizes, 's' | 'm' | 'l' | 'xl'>;\n"]}

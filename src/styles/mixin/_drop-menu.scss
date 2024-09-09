@@ -1,0 +1,6 @@
+@mixin dropdown-style-drop-menu() {
+    true-text-button {
+        --align-items: center;
+        --slot-end-gap: 4px;
+    }
+}

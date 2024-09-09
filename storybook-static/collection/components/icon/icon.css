@@ -1,0 +1,53 @@
+:host {
+  --color: currentColor;
+  display: inline-block;
+  /* Sized by font-size */
+  width: 1em;
+  min-width: 1em;
+  height: 1em;
+  min-height: 1em;
+  contain: strict;
+  box-sizing: content-box !important;
+  --transition-speed: .2s;
+}
+
+:host([size=xxs]) {
+  font-size: 10px !important;
+}
+
+:host([size=xs]) {
+  font-size: 12px !important;
+}
+
+:host([size=s]) {
+  font-size: 16px !important;
+}
+
+:host([size=m]) {
+  font-size: 20px !important;
+}
+
+:host([size=l]) {
+  font-size: 24px !important;
+}
+
+:host([size=xl]) {
+  font-size: 48px !important;
+}
+
+.icon-inner,
+svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 100%;
+  min-width: 100%;
+  height: 100%;
+  min-height: 100%;
+}
+
+svg {
+  transition: fill var(--transition-speed) ease-in-out;
+  fill: var(--color);
+}

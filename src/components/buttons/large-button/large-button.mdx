@@ -1,0 +1,21 @@
+import { Meta, Stories, ArgTypes, Markdown } from '@storybook/blocks';
+import * as LargeButtonStories from './large-button.stories'
+import styles from './styles.md'
+
+<Meta of={LargeButtonStories} />
+
+# Large Button
+
+Button with text and an icon at the end slot
+Has state for loading
+
+## Props
+
+<ArgTypes of={LargeButtonStories} />
+
+<Stories />
+
+## CSS Variables
+
+<Markdown>{styles}</Markdown>
+

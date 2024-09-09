@@ -1,0 +1,22 @@
+:host {
+    display: block;
+    --color: var(--color-primary);
+
+    true-text-base {
+        --line-height: initial;
+        --text-color: var(--color);
+    }
+}
+
+$custom-line-heights: (
+    h1: 52px,
+    h3: 32px
+);
+
+@each $name, $line-height in $custom-line-heights {
+    :host([size="#{$name}"]) {
+        true-text-base {
+            --line-height: #{$line-height};
+        }
+    }
+}

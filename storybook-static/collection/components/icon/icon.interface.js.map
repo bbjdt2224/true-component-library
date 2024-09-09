@@ -1,0 +1,1 @@
+{"version":3,"file":"icon.interface.js","sourceRoot":"","sources":["../../../src/components/icon/icon.interface.ts"],"names":[],"mappings":"","sourcesContent":["import { Sizes } from '../../interface';\n\nexport type IconSizes = Extract<Sizes, 'xxs' | 'xs' | 's' | 'm' | 'l' | 'xl'>;"]}

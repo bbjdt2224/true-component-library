@@ -1,0 +1,185 @@
+@use 'sass:color';
+
+:root {
+  // Background Colors
+  --bg-color-primary: var(--color-neutral-97);
+  --bg-color-secondary: var(--color-neutral-100);
+  --bg-color-secondary-rgb: var(--color-neutral-100-rgb);
+  --bg-color-tertiary: var(--color-neutral-95);
+  --bg-color-accent: var(--color-custom-brand-accent-tint-2);
+  --bg-color-destructive: var(--color-true-primary-red);
+
+  // Background Hover Colors
+  --bg-hover-primary: var(--color-neutral-97);
+  --bg-hover-secondary: var(--color-neutral-95);
+  --bg-hover-tertiary: var(--color-neutral-90);
+  --bg-hover-accent: var(--color-custom-brand-accent-tint-1);
+  --bg-hover-destructive: var(--color-true-primary-red-tint-2);
+
+  // Label Colors
+  --color-primary: var(--color-neutral-18);
+  --color-secondary: var(--color-neutral-39);
+  --color-tertiary: var(--color-neutral-59);
+  --color-accent: var(--color-custom-brand-accent);
+  --color-destructive: var(--color-true-primary-red);
+
+  // Label Hover Colors
+  --color-hover-destructive: var(--color-destructive);
+
+  // Separator Colors
+
+  // Is "secondary" since it's used on secondary background
+  --separator-primary: var(--color-neutral-95);
+  // Is "primary" since it's used on primary background
+  --separator-off-card: var(--color-neutral-90);
+
+  // Shadows
+  --box-shadow-key-low: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+  --box-shadow-key-high: 1px 2px 8px 0 rgba(0, 0, 0, 0.1);
+  --box-shadow-ambient: 0 2px 23px 0 rgba(0, 0, 0, 0.05);
+
+  //Overlays
+  --overlays: rgba(var(--color-neutral-0-rgb), 0.5);
+
+  // Scrims
+  --overlays-scrim: rgba(var(--color-neutral-18-rgb), 0.4);
+
+  // Gradients
+  --gradient-primary: linear-gradient(70.96deg, #bf5ced 0%, #ff3494 100%);
+  --gradient-danger: linear-gradient(0.25turn, var(--color-true-primary-red) 100%, var(--color-true-primary-red-shade) 100%);
+  --gradient-success: linear-gradient(0.25turn, var(--color-true-primary-green)100%, var(--color-true-primary-green-shade) 100%);
+  --gradient-accent: linear-gradient(0.25turn, var(--color-custom-brand-accent) 100%, var(--color-custom-brand-accent-shade) 100%);
+}
+
+html {
+  body {
+    background: var(--bg-color-primary);
+  }
+}
+
+$colors: (
+  /* True Brand Colors */ 
+
+  'true-primary-red':
+    (
+      base: #ff577d,
+      contrast: #ffffff,
+    ),
+  'true-primary-yellow': (
+    base: #f5ce31,
+    contrast: #ffffff,
+  ),
+  'true-primary-green': (
+    base: #34d6a0,
+    contrast: #ffffff,
+  ),
+  'true-primary-purple': (
+    base: #9973ff,
+    contrast: #ffffff,
+  ),
+  'true-primary-blue': (
+    base: #397ee5,
+    contrast: #ffffff,
+  ),
+  /* Custom Brand Colors */ 
+  
+  'custom-brand-accent':
+  (
+    base: #55fca0,
+    contrast: #ffffff
+  ),
+  'custom-brand-primary': (
+    base: #0a0e29,
+    contrast: #ffffff
+  ),
+  /* Neutral Colors */ 
+
+  'neutral-100':
+  (
+    base: #ffffff,
+    contrast: #000,
+  ),
+  'neutral-97': (
+    base: #f6f6f9,
+    contrast: #ffffff,
+  ),
+  'neutral-95': (
+    base: #f1f1f4,
+    contrast: #ffffff,
+  ),
+  'neutral-90': (
+    base: #e2e2e9,
+    contrast: #ffffff,
+  ),
+  'neutral-59': (
+    base: #949499,
+    contrast: #ffffff,
+  ),
+  'neutral-39': (
+    base: #636366,
+    contrast: #ffffff,
+  ),
+  'neutral-23': (
+    base: #3a3a3c,
+    contrast: #ffffff,
+  ),
+  'neutral-18': (
+    base: #2c2c2e,
+    contrast: #ffffff,
+  ),
+  'neutral-11': (
+    base: #1c1c1e,
+    contrast: #ffffff,
+  ),
+  'neutral-0': (
+    base: #000,
+    contrast: #ffffff,
+  )
+);
+
+
+@function convertRGB($color) {
+    @return unquote('#{red($color)}, #{green($color)}, #{blue($color)}');
+}
+
+// Mixes a color with white to create its tint.
+@function get-color-tint($color) {
+    @return mix(#fff, $color, 20%);
+}
+
+@each $name, $color in $colors {
+    $varName: --color-#{$name};
+
+    $baseColor: map-get($color, base);
+    $contrastColor: map-get($color, contrast);
+
+    $shadeColor: map-get($color, shade);
+    $tintColor: map-get($color, tint);
+
+    :root {
+        #{$varName}: #{$baseColor};
+        #{$varName}-rgb: convertRGB($baseColor);
+        #{$varName}-contrast: #{$contrastColor};
+        #{$varName}-contrast-rgb: convertRGB($contrastColor);
+
+        #{$varName}-offset: rgba(var(#{$varName}-rgb), 0.1);
+        #{$varName}-tint-1: color.change($baseColor, $lightness: 93%);
+        #{$varName}-tint-2: color.change($baseColor, $lightness: 97%);
+
+        @if ($shadeColor) {
+            #{$varName}-shade: $shadeColor;
+        } @else {
+            #{$varName}-shade: color.scale($baseColor, $lightness: -8%);
+        }
+
+        @if ($tintColor) {
+            #{$varName}-tint: $tintColor;
+        } @else {
+            #{$varName}-tint: get-color-tint($baseColor);
+        }
+    }
+
+    .color-#{$name} {
+        color: var(#{$varName});
+    }
+}

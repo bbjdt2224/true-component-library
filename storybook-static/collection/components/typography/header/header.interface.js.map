@@ -1,0 +1,1 @@
+{"version":3,"file":"header.interface.js","sourceRoot":"","sources":["../../../../src/components/typography/header/header.interface.ts"],"names":[],"mappings":"","sourcesContent":["export type HeaderSize = 'h1' | 'h2' | 'h3' | 'h4';\r\n"]}
