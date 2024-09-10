@@ -15,7 +15,7 @@ function importAll(r: any): string[] {
   return r.keys().map(r) as string[];
 }
 const AllIcons = importAll((require as any).context('./icons', true, /\.(svg)$/)).map(iconPath => {
-  iconPath = iconPath.substring(iconPath.lastIndexOf('/') + 1, iconPath.lastIndexOf('.'));
+  iconPath = iconPath.substring(iconPath.lastIndexOf('/') + 1, iconPath.indexOf('.'));
   return iconPath;
 });
 
