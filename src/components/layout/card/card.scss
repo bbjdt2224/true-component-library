@@ -1,0 +1,51 @@
+:host {
+
+  --max-width: 896px;
+  --border-radius: 10px;
+  --content-padding: 16px 24px 32px 24px;
+  --header-padding: 16px 24px;
+
+  background: var(--bg-color-secondary);
+
+  display: block;
+  max-width: var(--max-width);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow-ambient);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--header-padding);
+  border-bottom: 1px solid var(--bg-color-tertiary);
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+  transition: background-color .5s ease-out;
+}
+
+.card-content {
+  padding: var(--content-padding);
+  --table-box-shadow: none;
+
+  ::slotted(*:not(:last-child)) {
+      margin-bottom: 24px;
+  }
+
+  // separate '.blocks' of slotted content with border
+  ::slotted(.block:not(:last-child)) {
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--bg-color-tertiary);
+      border-top-left-radius: var(--border-radius);
+      border-top-right-radius: var(--border-radius);
+  }
+
+}
+
+:host(true-card ~ true-card) {
+  margin: 16px 0;
+}
+
+:host([no-padding]) {
+  --content-padding: 0;
+}

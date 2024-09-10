@@ -22,19 +22,11 @@ export { IconButtonSize } from "./components/buttons/icon-button/icon-button.int
 export { LoadingSpinnerSizes } from "./components/basic-app/loading-spinner/loading-spinner.interface";
 export { TextButtonSizes } from "./components/buttons/text-button/text-button.interface";
 export namespace Components {
-    interface MyComponent {
+    interface TrueBlock {
         /**
-          * The first name
+          * The background color of the block container.
          */
-        "first": string;
-        /**
-          * The last name
-         */
-        "last": string;
-        /**
-          * The middle name
-         */
-        "middle": string;
+        "background": BackgroundColor;
     }
     interface TrueButton {
         /**
@@ -65,6 +57,42 @@ export namespace Components {
           * The intended action of the button (primary, secondary, destructive)
          */
         "type": ActionType;
+    }
+    interface TrueCard {
+        /**
+          * Text in the header of the card
+         */
+        "header": string;
+        /**
+          * If true do not render card header text
+         */
+        "noHeader": boolean;
+        /**
+          * Sets padding of card to 0
+         */
+        "noPadding": boolean;
+    }
+    interface TrueContainer {
+        /**
+          * Grid item alignment
+         */
+        "align": 'stretch';
+        /**
+          * Gap bewteen grid columns
+         */
+        "columnGap": string;
+        /**
+          * Grid comlumn template
+         */
+        "columns": string;
+        /**
+          * Grid content justification
+         */
+        "justify": string;
+        /**
+          * Maximum width of container
+         */
+        "maxWidth": 'max' | 'content' | 'none' | 'form' | 'detail';
     }
     interface TrueHeader {
         /**
@@ -291,17 +319,29 @@ export namespace Components {
     }
 }
 declare global {
-    interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
+    interface HTMLTrueBlockElement extends Components.TrueBlock, HTMLStencilElement {
     }
-    var HTMLMyComponentElement: {
-        prototype: HTMLMyComponentElement;
-        new (): HTMLMyComponentElement;
+    var HTMLTrueBlockElement: {
+        prototype: HTMLTrueBlockElement;
+        new (): HTMLTrueBlockElement;
     };
     interface HTMLTrueButtonElement extends Components.TrueButton, HTMLStencilElement {
     }
     var HTMLTrueButtonElement: {
         prototype: HTMLTrueButtonElement;
         new (): HTMLTrueButtonElement;
+    };
+    interface HTMLTrueCardElement extends Components.TrueCard, HTMLStencilElement {
+    }
+    var HTMLTrueCardElement: {
+        prototype: HTMLTrueCardElement;
+        new (): HTMLTrueCardElement;
+    };
+    interface HTMLTrueContainerElement extends Components.TrueContainer, HTMLStencilElement {
+    }
+    var HTMLTrueContainerElement: {
+        prototype: HTMLTrueContainerElement;
+        new (): HTMLTrueContainerElement;
     };
     interface HTMLTrueHeaderElement extends Components.TrueHeader, HTMLStencilElement {
     }
@@ -376,8 +416,10 @@ declare global {
         new (): HTMLTrueTextButtonElement;
     };
     interface HTMLElementTagNameMap {
-        "my-component": HTMLMyComponentElement;
+        "true-block": HTMLTrueBlockElement;
         "true-button": HTMLTrueButtonElement;
+        "true-card": HTMLTrueCardElement;
+        "true-container": HTMLTrueContainerElement;
         "true-header": HTMLTrueHeaderElement;
         "true-icon": HTMLTrueIconElement;
         "true-icon-button": HTMLTrueIconButtonElement;
@@ -393,19 +435,11 @@ declare global {
     }
 }
 declare namespace LocalJSX {
-    interface MyComponent {
+    interface TrueBlock {
         /**
-          * The first name
+          * The background color of the block container.
          */
-        "first"?: string;
-        /**
-          * The last name
-         */
-        "last"?: string;
-        /**
-          * The middle name
-         */
-        "middle"?: string;
+        "background"?: BackgroundColor;
     }
     interface TrueButton {
         /**
@@ -436,6 +470,42 @@ declare namespace LocalJSX {
           * The intended action of the button (primary, secondary, destructive)
          */
         "type"?: ActionType;
+    }
+    interface TrueCard {
+        /**
+          * Text in the header of the card
+         */
+        "header"?: string;
+        /**
+          * If true do not render card header text
+         */
+        "noHeader"?: boolean;
+        /**
+          * Sets padding of card to 0
+         */
+        "noPadding"?: boolean;
+    }
+    interface TrueContainer {
+        /**
+          * Grid item alignment
+         */
+        "align"?: 'stretch';
+        /**
+          * Gap bewteen grid columns
+         */
+        "columnGap"?: string;
+        /**
+          * Grid comlumn template
+         */
+        "columns"?: string;
+        /**
+          * Grid content justification
+         */
+        "justify"?: string;
+        /**
+          * Maximum width of container
+         */
+        "maxWidth"?: 'max' | 'content' | 'none' | 'form' | 'detail';
     }
     interface TrueHeader {
         /**
@@ -661,8 +731,10 @@ declare namespace LocalJSX {
         "weight"?: TextWeight;
     }
     interface IntrinsicElements {
-        "my-component": MyComponent;
+        "true-block": TrueBlock;
         "true-button": TrueButton;
+        "true-card": TrueCard;
+        "true-container": TrueContainer;
         "true-header": TrueHeader;
         "true-icon": TrueIcon;
         "true-icon-button": TrueIconButton;
@@ -681,8 +753,10 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "true-block": LocalJSX.TrueBlock & JSXBase.HTMLAttributes<HTMLTrueBlockElement>;
             "true-button": LocalJSX.TrueButton & JSXBase.HTMLAttributes<HTMLTrueButtonElement>;
+            "true-card": LocalJSX.TrueCard & JSXBase.HTMLAttributes<HTMLTrueCardElement>;
+            "true-container": LocalJSX.TrueContainer & JSXBase.HTMLAttributes<HTMLTrueContainerElement>;
             "true-header": LocalJSX.TrueHeader & JSXBase.HTMLAttributes<HTMLTrueHeaderElement>;
             "true-icon": LocalJSX.TrueIcon & JSXBase.HTMLAttributes<HTMLTrueIconElement>;
             "true-icon-button": LocalJSX.TrueIconButton & JSXBase.HTMLAttributes<HTMLTrueIconButtonElement>;

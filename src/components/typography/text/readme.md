@@ -18,6 +18,7 @@
 
 ### Used by
 
+ - [true-card](../../layout/card)
  - [true-icon-preview](../../icon/icon-preview)
 
 ### Depends on
@@ -28,6 +29,7 @@
 ```mermaid
 graph TD;
   true-text --> true-text-base
+  true-card --> true-text
   true-icon-preview --> true-text
   style true-text fill:#f9f,stroke:#333,stroke-width:4px
 ```

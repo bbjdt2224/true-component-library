@@ -1,0 +1,26 @@
+
+:host {
+    --template-columns: 100%;
+    --template-rows: 100%;
+    --column-gap: 32px;
+    --max-width: 1275px;
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    .grid {
+        max-width: var(--max-width);
+        display: grid;
+        column-gap: var(--column-gap);
+        grid-template-columns: var(--template-columns);
+        grid-template-rows: var(--template-rows);
+        width: 100%;
+        height: 100%;
+
+        > div {
+            min-width: 0;
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+import { Meta, Stories, ArgTypes, Markdown } from '@storybook/blocks';
+import * as CardStories from './card.stories'
+import styles from './styles.md'
+
+<Meta of={CardStories} />
+
+# Card
+
+Stylish way to display data
+
+## Props
+
+<ArgTypes of={CardStories} />
+
+<Stories />
+
+## CSS Variables
+
+<Markdown>{styles}</Markdown>
+

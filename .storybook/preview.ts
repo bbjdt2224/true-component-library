@@ -1,11 +1,10 @@
 import { Preview } from '@storybook/html';
 import { defineCustomElements } from '../dist/esm/loader';
-import { setCustomElementsManifest } from '@storybook/web-components';
-import customElements from '../custom-elements.json';
 import '../src/styles/main.scss';
+import { themes } from '@storybook/theming';
 
 defineCustomElements();
-setCustomElementsManifest(customElements);
+// setCustomElementsManifest(customElements);
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
