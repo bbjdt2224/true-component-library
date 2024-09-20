@@ -1,0 +1,17 @@
+:host {
+    --bg-color: var(--color-true-primary-red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 24px;
+    height: 24px;
+    border-radius: 9999px;
+    background: var(--bg-color);
+    border: 2px solid var(--bg-color-primary);
+    user-select: none;
+    padding: 4px;
+    box-sizing: border-box;
+    true-subtext {
+        --font-variant-numeric: tabular-nums;
+    }
+}

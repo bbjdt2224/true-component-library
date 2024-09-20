@@ -11,6 +11,7 @@ import { HeaderSize } from "./components/typography/header/header.interface";
 import { TextColor, TextSize, TextWeight } from "./components/typography/text-base/text-base.interface";
 import { IconSizes } from "./components/icon/icon.interface";
 import { IconButtonSize } from "./components/buttons/icon-button/icon-button.interface";
+import { TextColor as TextColor1 } from "./components";
 import { LoadingSpinnerSizes } from "./components/basic-app/loading-spinner/loading-spinner.interface";
 import { TextButtonSizes } from "./components/buttons/text-button/text-button.interface";
 export { ActionType, BackgroundColor, LabelColor } from "./interface";
@@ -19,9 +20,14 @@ export { HeaderSize } from "./components/typography/header/header.interface";
 export { TextColor, TextSize, TextWeight } from "./components/typography/text-base/text-base.interface";
 export { IconSizes } from "./components/icon/icon.interface";
 export { IconButtonSize } from "./components/buttons/icon-button/icon-button.interface";
+export { TextColor as TextColor1 } from "./components";
 export { LoadingSpinnerSizes } from "./components/basic-app/loading-spinner/loading-spinner.interface";
 export { TextButtonSizes } from "./components/buttons/text-button/text-button.interface";
 export namespace Components {
+    interface TrueBadge {
+        "text": string;
+        "value": number;
+    }
     interface TrueBlock {
         /**
           * The background color of the block container.
@@ -71,6 +77,20 @@ export namespace Components {
           * Sets padding of card to 0
          */
         "noPadding": boolean;
+    }
+    interface TrueChip {
+        /**
+          * `true` if the chip can be removed
+         */
+        "deletable": boolean;
+        /**
+          * `true` indicates focused state of the chip
+         */
+        "focused": boolean;
+        /**
+          * `true` if the chip should render box shadow.
+         */
+        "hasShadow": boolean;
     }
     interface TrueContainer {
         /**
@@ -226,6 +246,32 @@ export namespace Components {
          */
         "type": ActionType;
     }
+    interface TrueLineProgress {
+        /**
+          * Color of the track the progress follows
+         */
+        "backgroundColor": BackgroundColor;
+        /**
+          * Number of complete items
+         */
+        "complete": number;
+        /**
+          * Color of the progress line
+         */
+        "progressColor": LabelColor;
+        /**
+          * `true` if showing the fraction to the right of the bar
+         */
+        "showFraction": boolean;
+        /**
+          * Color of the inner text
+         */
+        "textColor": TextColor1;
+        /**
+          * Number of total items
+         */
+        "total": number;
+    }
     interface TrueLoadingSpinner {
         /**
           * Color of the loader line
@@ -318,7 +364,17 @@ export namespace Components {
         "weight": TextWeight;
     }
 }
+export interface TrueChipCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLTrueChipElement;
+}
 declare global {
+    interface HTMLTrueBadgeElement extends Components.TrueBadge, HTMLStencilElement {
+    }
+    var HTMLTrueBadgeElement: {
+        prototype: HTMLTrueBadgeElement;
+        new (): HTMLTrueBadgeElement;
+    };
     interface HTMLTrueBlockElement extends Components.TrueBlock, HTMLStencilElement {
     }
     var HTMLTrueBlockElement: {
@@ -336,6 +392,23 @@ declare global {
     var HTMLTrueCardElement: {
         prototype: HTMLTrueCardElement;
         new (): HTMLTrueCardElement;
+    };
+    interface HTMLTrueChipElementEventMap {
+        "deleted": any;
+    }
+    interface HTMLTrueChipElement extends Components.TrueChip, HTMLStencilElement {
+        addEventListener<K extends keyof HTMLTrueChipElementEventMap>(type: K, listener: (this: HTMLTrueChipElement, ev: TrueChipCustomEvent<HTMLTrueChipElementEventMap[K]>) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | AddEventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLTrueChipElementEventMap>(type: K, listener: (this: HTMLTrueChipElement, ev: TrueChipCustomEvent<HTMLTrueChipElementEventMap[K]>) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | EventListenerOptions): void;
+    }
+    var HTMLTrueChipElement: {
+        prototype: HTMLTrueChipElement;
+        new (): HTMLTrueChipElement;
     };
     interface HTMLTrueContainerElement extends Components.TrueContainer, HTMLStencilElement {
     }
@@ -385,6 +458,12 @@ declare global {
         prototype: HTMLTrueLargeIconButtonElement;
         new (): HTMLTrueLargeIconButtonElement;
     };
+    interface HTMLTrueLineProgressElement extends Components.TrueLineProgress, HTMLStencilElement {
+    }
+    var HTMLTrueLineProgressElement: {
+        prototype: HTMLTrueLineProgressElement;
+        new (): HTMLTrueLineProgressElement;
+    };
     interface HTMLTrueLoadingSpinnerElement extends Components.TrueLoadingSpinner, HTMLStencilElement {
     }
     var HTMLTrueLoadingSpinnerElement: {
@@ -416,9 +495,11 @@ declare global {
         new (): HTMLTrueTextButtonElement;
     };
     interface HTMLElementTagNameMap {
+        "true-badge": HTMLTrueBadgeElement;
         "true-block": HTMLTrueBlockElement;
         "true-button": HTMLTrueButtonElement;
         "true-card": HTMLTrueCardElement;
+        "true-chip": HTMLTrueChipElement;
         "true-container": HTMLTrueContainerElement;
         "true-header": HTMLTrueHeaderElement;
         "true-icon": HTMLTrueIconElement;
@@ -427,6 +508,7 @@ declare global {
         "true-label": HTMLTrueLabelElement;
         "true-large-button": HTMLTrueLargeButtonElement;
         "true-large-icon-button": HTMLTrueLargeIconButtonElement;
+        "true-line-progress": HTMLTrueLineProgressElement;
         "true-loading-spinner": HTMLTrueLoadingSpinnerElement;
         "true-subtext": HTMLTrueSubtextElement;
         "true-text": HTMLTrueTextElement;
@@ -435,6 +517,10 @@ declare global {
     }
 }
 declare namespace LocalJSX {
+    interface TrueBadge {
+        "text"?: string;
+        "value"?: number;
+    }
     interface TrueBlock {
         /**
           * The background color of the block container.
@@ -484,6 +570,24 @@ declare namespace LocalJSX {
           * Sets padding of card to 0
          */
         "noPadding"?: boolean;
+    }
+    interface TrueChip {
+        /**
+          * `true` if the chip can be removed
+         */
+        "deletable"?: boolean;
+        /**
+          * `true` indicates focused state of the chip
+         */
+        "focused"?: boolean;
+        /**
+          * `true` if the chip should render box shadow.
+         */
+        "hasShadow"?: boolean;
+        /**
+          * Emitted when the user clicks the delete button.
+         */
+        "onDeleted"?: (event: TrueChipCustomEvent<any>) => void;
     }
     interface TrueContainer {
         /**
@@ -639,6 +743,32 @@ declare namespace LocalJSX {
          */
         "type"?: ActionType;
     }
+    interface TrueLineProgress {
+        /**
+          * Color of the track the progress follows
+         */
+        "backgroundColor"?: BackgroundColor;
+        /**
+          * Number of complete items
+         */
+        "complete"?: number;
+        /**
+          * Color of the progress line
+         */
+        "progressColor"?: LabelColor;
+        /**
+          * `true` if showing the fraction to the right of the bar
+         */
+        "showFraction"?: boolean;
+        /**
+          * Color of the inner text
+         */
+        "textColor"?: TextColor1;
+        /**
+          * Number of total items
+         */
+        "total"?: number;
+    }
     interface TrueLoadingSpinner {
         /**
           * Color of the loader line
@@ -731,9 +861,11 @@ declare namespace LocalJSX {
         "weight"?: TextWeight;
     }
     interface IntrinsicElements {
+        "true-badge": TrueBadge;
         "true-block": TrueBlock;
         "true-button": TrueButton;
         "true-card": TrueCard;
+        "true-chip": TrueChip;
         "true-container": TrueContainer;
         "true-header": TrueHeader;
         "true-icon": TrueIcon;
@@ -742,6 +874,7 @@ declare namespace LocalJSX {
         "true-label": TrueLabel;
         "true-large-button": TrueLargeButton;
         "true-large-icon-button": TrueLargeIconButton;
+        "true-line-progress": TrueLineProgress;
         "true-loading-spinner": TrueLoadingSpinner;
         "true-subtext": TrueSubtext;
         "true-text": TrueText;
@@ -753,9 +886,11 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "true-badge": LocalJSX.TrueBadge & JSXBase.HTMLAttributes<HTMLTrueBadgeElement>;
             "true-block": LocalJSX.TrueBlock & JSXBase.HTMLAttributes<HTMLTrueBlockElement>;
             "true-button": LocalJSX.TrueButton & JSXBase.HTMLAttributes<HTMLTrueButtonElement>;
             "true-card": LocalJSX.TrueCard & JSXBase.HTMLAttributes<HTMLTrueCardElement>;
+            "true-chip": LocalJSX.TrueChip & JSXBase.HTMLAttributes<HTMLTrueChipElement>;
             "true-container": LocalJSX.TrueContainer & JSXBase.HTMLAttributes<HTMLTrueContainerElement>;
             "true-header": LocalJSX.TrueHeader & JSXBase.HTMLAttributes<HTMLTrueHeaderElement>;
             "true-icon": LocalJSX.TrueIcon & JSXBase.HTMLAttributes<HTMLTrueIconElement>;
@@ -764,6 +899,7 @@ declare module "@stencil/core" {
             "true-label": LocalJSX.TrueLabel & JSXBase.HTMLAttributes<HTMLTrueLabelElement>;
             "true-large-button": LocalJSX.TrueLargeButton & JSXBase.HTMLAttributes<HTMLTrueLargeButtonElement>;
             "true-large-icon-button": LocalJSX.TrueLargeIconButton & JSXBase.HTMLAttributes<HTMLTrueLargeIconButtonElement>;
+            "true-line-progress": LocalJSX.TrueLineProgress & JSXBase.HTMLAttributes<HTMLTrueLineProgressElement>;
             "true-loading-spinner": LocalJSX.TrueLoadingSpinner & JSXBase.HTMLAttributes<HTMLTrueLoadingSpinnerElement>;
             "true-subtext": LocalJSX.TrueSubtext & JSXBase.HTMLAttributes<HTMLTrueSubtextElement>;
             "true-text": LocalJSX.TrueText & JSXBase.HTMLAttributes<HTMLTrueTextElement>;

@@ -12,6 +12,7 @@ log.txt
 *.sublime-project
 *.sublime-workspace
 
+.fttemplates/
 .stencil/
 .idea/
 .vscode/

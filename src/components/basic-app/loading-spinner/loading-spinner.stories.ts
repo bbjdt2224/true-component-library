@@ -24,7 +24,6 @@ const meta: Meta<args> = {
       control: {
         type: 'select',
       },
-      disable: true,
       table: {
         defaultValue: { summary: 'm' },
         type: { summary: 's | m | l | xl' },
@@ -33,14 +32,13 @@ const meta: Meta<args> = {
     loaderColor: {
       type: 'string',
       description: 'Color of the loader',
-      options: ['primary', 'secondary', 'tertiary', 'destructive', 'brand-primary-blue', 'brand-primary-green', 'brand-primary-red', 'neutral-100', 'custom-brand-accent'],
+      options: ['primary', 'secondary', 'tertiary', 'destructive', 'true-primary-blue', 'true-primary-green', 'true-primary-red', 'neutral-100', 'custom-brand-accent'],
       control: {
         type: 'select',
       },
-      disable: true,
       table: {
         defaultValue: { summary: 'custom-brand-accent' },
-        type: { summary: 'primary | secondary | tertiary | destructive | brand-primary-blue | brand-primary-green | brand-primary-red | neutral-100 | custom-brand-accent' },
+        type: { summary: 'primary | secondary | tertiary | destructive | true-primary-blue | true-primary-green | true-primary-red | neutral-100 | custom-brand-accent' },
       },
     },
     pathColor: {
@@ -50,7 +48,6 @@ const meta: Meta<args> = {
       control: {
         type: 'select',
       },
-      disable: true,
       table: {
         defaultValue: { summary: 'tertiary' },
         type: { summary: 'primary | secondary | tertiary' },

@@ -1,0 +1,70 @@
+@import '../../../styles//mixin/button';
+
+:host {
+    --chip-height: 24px;
+    --background-color: var(--bg-color-tertiary);
+    --text-color: var(--color-primary);
+
+    user-select: none;
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    z-index: 1;
+    overflow: visible;
+}
+
+.chip {
+    height: var(--chip-height);
+    padding: 0 16px;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    border-radius: var(--chip-height);
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    @include button();
+    box-sizing: content-box;
+    margin-left: 2px;
+    width: 24px;
+    &:hover {
+        background-color: var(--bg-hover-tertiary);
+    }
+}
+
+:host([deletable]) .chip {
+    &.text {
+        border-radius: 12px 0 0 12px;
+    }
+
+    &.action {
+        padding: 0;
+        width: 28px;
+        border-radius: 0 12px 12px 0;
+        &:hover {
+            true-icon {
+                --color: var(--color-true-primary-red)!important;
+            }
+        }
+    }
+}
+
+:host([focused]) .action {
+    background-color: var(--bg-hover-tertiary);
+    border: 2px solid var(--color-true-primary-blue);
+
+    true-icon {
+        --color: var(--color-true-primary-red)!important;
+    }
+}
+
+:host([has-shadow]) {
+    .chip {
+        box-shadow: var(--box-shadow-key-low);
+    }
+}
+

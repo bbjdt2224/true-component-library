@@ -149,7 +149,7 @@ export class IconPreview {
                             </div>
                             <div class='download-btn'>
                                 <true-icon color='primary' name={this.selectedIcon}></true-icon>
-                                <true-button color='brand-primary-blue' onClick={this.openSvg}>
+                                <true-button color='true-primary-blue' onClick={this.openSvg}>
                                     <div class='svg-btn'>
                                         <svg width='20px' height='20px' viewBox='0 0 32 32'>
                                             <path d='M26 12.469h-5.712v-8.469h-8.575v8.469h-5.713l10 9.881 10-9.881zM6 25.175v2.825h20v-2.825h-20z'></path>

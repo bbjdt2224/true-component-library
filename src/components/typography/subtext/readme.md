@@ -18,6 +18,7 @@
 
 ### Used by
 
+ - [true-badge](../../basic-app/badge)
  - [true-icon-button](../../buttons/icon-button)
  - [true-icon-preview](../../icon/icon-preview)
 
@@ -29,6 +30,7 @@
 ```mermaid
 graph TD;
   true-subtext --> true-text-base
+  true-badge --> true-subtext
   true-icon-button --> true-subtext
   true-icon-preview --> true-subtext
   style true-subtext fill:#f9f,stroke:#333,stroke-width:4px

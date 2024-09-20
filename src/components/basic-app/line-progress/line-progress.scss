@@ -1,0 +1,44 @@
+:host {
+    --progress-color: var(--color-custom-brand-accent);
+    --background-color: var(--bg-color-tertiary);
+    --background-opacity: 1;
+    --progress: 0;
+    --progress-height: 12px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+
+    .background {
+        width: 100%;
+        height: var(--progress-height);
+        border-radius: var(--progress-height);
+        background-color: var(--background-color);
+        opacity: var(--background-opacity);
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: var(--progress);
+            min-width: 12px;
+            border-radius: var(--progress-height);
+            background-color: var(--progress-color);
+            transition: width 0.5s linear;
+        }
+    }
+
+    true-text {
+        min-width: 72px;
+        text-align: right;
+        margin: 0 8px;
+        font-variant-numeric: tabular-nums;
+    }
+}
+
+:host([complete='0']) .background::before {
+    min-width: 0;
+}

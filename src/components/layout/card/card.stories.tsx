@@ -28,9 +28,6 @@ const meta: Meta<args> = {
     noHeader: {
       type: 'boolean',
       description: 'Do not render header text',
-      table: {
-        defaultValue: { summary: 'stretch' },
-      },
     },
     noPadding: {
       type: 'boolean',

@@ -5,6 +5,6 @@
 | --align-items    | `baseline`                   |
 | --slot-end-gap   | `0`                          |
 | --slot-start-gap | `0`                          |
-| --color          | `--color-brand-primary-blue` |
+| --color          | `--color-true-primary-blue` |
 | --color-disabled | `--color-tertiary`           |
 | --border-width   | `0px`                        |
